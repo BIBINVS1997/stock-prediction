@@ -21,7 +21,11 @@ const Header = () => {
 
          <div>
           {isLoggedin?(
-            <button className='btn btn-outline-danger' onClick={handleLogout}>Logout</button>
+           <>
+              <Button text='Dashbord' class='btn-outline-info' url='/dashbord'/>
+              &nbsp;
+              <button className='btn btn-outline-danger' onClick={handleLogout}>Logout</button>
+           </>
           ):(
             <>
               <Button text='Login' class='btn-outline-info' url='/login'/>
